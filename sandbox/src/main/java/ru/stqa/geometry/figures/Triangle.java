@@ -7,7 +7,7 @@ public record Triangle(double a, double b, double c) {
             throw  new IllegalArgumentException("Square side should be non-negative");
         }
         if(a+b>=c||a+c>=b||b+c>=a){
-            throw  new IllegalArgumentException("Square side should be non-negative");
+            throw  new IllegalArgumentException("Square side should be equal or less then summ of two other sides");
         }
     }
 
